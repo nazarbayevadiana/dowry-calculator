@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dowry Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Dowry calculator</h1>
+
+    <label for="education">Education level:</label>
+    <select id="education">
+      <option value="undergraduate">Undergraduate degree</option>
+      <option value="college">College degree</option>
+      <option value="highschool">High school degree</option>
+      <option value="middleschool">Middle school degree</option>
+    </select>
+
+    <br><br>
+
+    <label for="networth">Family networth:</label>
+    <select id="networth">
+      <option value="more10k">More than $10,000</option>
+      <option value="between5k10k">Between $5,000 and $10,000</option>
+      <option value="less5k">Less than $5,000</option>
+    </select>
+
+    <br><br>
+
+    <label for="caste">Caste:</label>
+    <select id="caste">
+      <option value="brahmin">Brahmin</option>
+      <option value="kshatriya">Kshatriya</option>
+      <option value="vaishya">Vaishya</option>
+      <option value="shudra">Shudra</option>
+      <option value="untouchable">Varna - Untouchable</option>
+    </select>
+
+    <br><br>
+
+    <fieldset>
+      <legend>Skills:</legend>
+      <label><input type="checkbox" name="skills" value="10">Plays instrument</label><br>
+      <label><input type="checkbox" name="skills" value="20">Good cook</label><br>
+      <label><input type="checkbox" name="skills" value="15">Easygoing</label><br>
+      <label><input type="checkbox" name="skills" value="10">Sings well</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Age:</legend>
+      <label><input type="radio" name="age" value="age18_23">18–23</label><br>
+      <label><input type="radio" name="age" value="age24_27">24–27</label><br>
+      <label><input type="radio" name="age" value="age28">28+</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Reputation:</legend>
+      <label><input type="checkbox" name="reputation" value="0.85" data-type="multiplier">Gossips about parents</label><br>
+      <label><input type="checkbox" name="reputation" value="0.9" data-type="multiplier">Gossips about character</label><br>
+      <label><input type="checkbox" name="reputation" value="-20" data-type="flat">General gossips</label>
+    </fieldset>
+
+    <br>
+    <button id="calculate">Calculate price</button>
+    <h2 id="result">Final Price: $100</h2>
+  </div>
+</body>
+</html>
+
